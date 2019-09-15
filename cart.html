@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>H&K Tea House</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<style>
+    .content {
+        font-size: 24px;
+    }
+    #leftcolumn {
+        float: left;
+        margin-top: 20px;
+    }
+    #rightcolumn {
+        float: right;
+        margin-top: 20px;
+    }
+    table {
+        margin: auto;
+    }
+    td {
+        height: 50px; 
+        padding-left: 20px; 
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    #order-table {
+        margin-right: 200px;
+    }
+    form {
+	max-width: 600px;
+	padding: 10px 20px;
+	margin: 10px auto;
+	border-radius: 8px;
+    }
+    form input[type="number"],
+    form input[type="text"],
+    form input[type="email"],
+    form textarea,
+    form select,
+    form select option {
+        border: none;
+        border-radius: 4px;
+        font-size: 15px;
+        margin: 0;
+        outline: 0;
+        padding: 10px;
+        box-sizing: border-box; 
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box; 
+        background-color: #e8eeef;
+        color:#4d2600;
+        -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+        box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+        margin-bottom: 30px;
+        width: 300px;
+    }
+    form input[type="number"] {
+        width: 70px;
+    }
+    form input[type="text"]:focus,
+    form input[type="text"]:focus,
+    form textarea:focus,
+    form select:focus{
+        background: #d2d9dd;
+    }
+    form select{
+        -webkit-appearance: menulist-button;
+        height:35px;
+    }
+
+    form input[type="submit"]
+    {
+        position: relative;
+        display: block;
+        padding: 15px 30px 15px 30px;
+        color: #FFF;
+        margin-left: 0 auto;
+        background: grey;
+        font-size: 24px;
+        text-align: center;
+        font-style: normal;
+        width: fit-content;
+        right: 50px;
+        border: 1px solid grey;
+        border-width: 1px 1px 3px;
+        margin-bottom: 10px;
+        border-radius: 25px;
+        font-family: inherit;
+    }
+    form input[type="submit"]:hover,
+    form input[type="button"]:hover
+    {
+        cursor: pointer;
+    }
+    #rightcolumn a {
+        text-decoration: none;
+    }
+</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+		<div id="name"><a id="hk">H&K</a> <a id="tea-house">Tea House</a></div>
+		<div id="nav-bar">
+            <nav>
+            <a id="home" href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn" id="menu" href="menu.html">Menu</button>
+                <div class="dropdown-content">
+                    <a id="fruit-tea" href="fruit_tea.html">Fruit Tea</a>
+                    <a id="milk-tea" href="milk_tea.html">Milk Tea</a>
+                    <a id="cheese-tea" href="cheese_tea.html">Cheese Tea</a>
+                    <a id="pure-tea" href="pure_tea.html">Pure Tea</a>
+                </div>
+            </div> 
+            <a id="cart" href="cart.html">My Cart</a>
+            <a id="contact" href="contact.html">Contact Us</a>
+            </nav>	
+        </div>
+		</header>
+		<div class="content"> 
+            <div id="leftcolumn">
+                <h2>My Shopping Cart</h2>
+                <form action="show_get.php" method="get">
+                    <table>
+                        <tr>
+                            <th style="min-width: 160px">Product Name</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>	
+                        <tr>
+                            <td align="center">
+                                <!-- <select name="tea">
+                                    <option value="default">Choose your tea here</option>
+                                    <option value="tea 1">tea 1</option>
+                                    <option value="tea 2">tea 2</option>
+                                    <option value="tea 3">tea 3</option>
+                                    <option value="tea 4">tea 4</option>
+                                </select> -->
+                                xxxxxxx
+                            </td>
+                            <td align="center">
+                                <!-- <input type="number" name="quantity" min="1" value="1"> -->
+                                1
+                            </td>
+                            <td align="center">
+                                $3.00
+                            </td>
+                        </tr>	
+                        <tr>
+                            <td align="center">
+                                <!-- <select name="tea">
+                                    <option value="default">Choose your tea here</option>
+                                    <option value="tea 1">tea 1</option>
+                                    <option value="tea 2">tea 2</option>
+                                    <option value="tea 3">tea 3</option>
+                                    <option value="tea 4">tea 4</option>
+                                </select> -->
+                                xxxx
+                            </td>
+                            <td align="center">
+                                <!-- <input type="number" name="quantity" min="1" value="1"> -->
+                                1
+                            </td>
+                            <td align="center">
+                                $3.50
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Total</th>
+                            <td></td>
+                            <td>$6.50</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div id="rightcolumn">
+                <h2>Order</h2>
+                <p>Required fields are marked with an asterisk *</p>
+                <form action="payment.html" method="get">
+                    <table id="order-table">
+                        <tr>
+                            <td align="right">*Name</td>
+                            <td><input type="text" name="name" required></td>
+                        </tr>
+                        <tr>
+                            <td align="right">*Email: </td>
+                            <td><input type="email" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <td align="right">*Contact Number</td>
+                            <td><input type="text" name="contact" required></td>
+                        </tr>
+                        <tr>
+                            <td align="right">*Address</td>
+                            <td><input type="text" name="address" required></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Additional Requirements(If any)</td>
+                            <td><textarea type="textarea" name="requirements" rows="3" cols="30"></textarea></td>
+                        </tr>		
+                        <tr>
+                            <td></td>
+                            <td>
+                                <a href="payment.html">
+                                    <input type="submit" value="Click Here For Payment" />
+                                </a>
+                            </td>	
+                    </table>
+                </form>               
+            </div>
+		</div>
+	</div>
+	<footer>
+		<i><a>Copyright &copy; 2019 Wang Kexin</a> <br>
+			<a href = "mailto:kexin@wang.com">
+			kexin@wang.com</a>
+		</i>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+body {
+	width: 100%;
+	margin: auto;
+	min-width: 1250px;
+	background-image: url(home.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 1000px;
+	font-family: Bradley Hand, cursive;
+}
+#wrapper {
+	height: 94%;
+	min-width: 1000px;
+} 
+header{ background-image: url(header.jpg);
+		background-repeat: no-repeat;
+		height: 130px;
+}
+#name { float: left; 
+		margin-left: 80px;
+		margin-top: 20px;
+		font-size: 50px;	
+		font-family: Bradley Hand, cursive;	
+		color: #4d2600;		
+		font-weight: bold;
+}
+#nav-bar{
+	padding-top: 60px;
+	font-family: Bradley Hand, cursive;
+	font-size: 26px;
+}
+#nav-bar nav {
+	background-color: grey;
+    height: auto;
+    padding: 5px;
+	width: fit-content;	
+	float: right;
+	margin-right: 30px;
+	border-radius: 25px;
+	opacity: 0.7;
+}
+#nav-bar a{
+	margin: 0 40px 0 40px;
+	font-weight: bold;
+	text-shadow: 2px 2px #4d2600;
+}
+nav a {text-decoration: none;
+}
+
+#home {
+	color: #ff5c33;
+	float: left;
+}
+#fruit-tea {
+	color: #ff5c33;
+}
+#menu, #milk-tea{
+	color: #a9c77b;
+}
+#cart, #cheese-tea{
+	color: seashell;
+}
+#contact, #pure-tea{
+	color: orange;
+}
+#hk {
+	font-size: 80px;
+}
+#tea-house {
+	font-size: 50px;
+}
+.content {
+	padding: 20px 20px 0 20px; 
+	color: 	#4d2800;
+	font-size: 30px;
+	margin: 20px 50px 50px 50px;
+	background-color: rgba(223, 223, 223, 0.9);
+	border: 5px solid grey;
+	border-radius: 25px;
+	height: 700px;
+}
+#address {  margin-left: 22px }
+footer {	font-size:80%;
+			text-align: center;
+			clear: right;
+			padding-bottom:20px;
+			padding-top:20px;
+			background-color: grey;
+			opacity: 0.7;
+}
+h2 { color: #4d2800; 
+	text-align: center;
+	margin-top: -20px;
+	margin-bottom: 0;
+   }
+   .dropdown {
+	float: left;
+	overflow: hidden;
+	  
+  }
+  
+  .dropdown .dropbtn {
+	  font-size: 26px;
+	  border: none;
+	  outline: none;
+	  color: white;
+	  background-color: inherit;
+	  font-family: inherit;
+	  margin: 0 40px 0 40px;
+	  font-weight: bold;
+	  text-shadow: 2px 2px #4d2600;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+	cursor: pointer;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+	background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
